@@ -1,0 +1,21 @@
+<div class="container">
+<h1> Sign up </h1>
+
+    <%= erb :'/_errors', layout: false %>
+
+<h3>Personal Information</h3>
+<form class="form" action = '/users' method= "POST">
+  <input type= "text" name= "user[first_name]" placeholder= "First Name" class="form-input"><br>
+  <input type= "text" name= "user[last_name]" placeholder= "Last Name" class="form-input"><br>
+  <input type= "text" name= "user[email]" placeholder= "Email" class="form-input"><br>
+  <input type= "text" name= "user[zip]" placeholder= "Zip Code" class="form-input"><br><br>
+
+<h3>Login Information</h3>
+  <input type= "text" name= "user[username]" placeholder= "Username" class="form-input"><br>
+  <input type= "password" name= "user[password]" placeholder= "Password" class="form-input"><br>
+  <input class="button" type= "submit" value= "Sign Up">
+  </form>
+
+  <h3>Already Registered?<a href= "/users/new"> Login!</a></h3>
+
+  </div>

@@ -1,0 +1,110 @@
+body {
+  font-family: 'Quattrocento Sans', sans-serif;
+  background-color:  #F7F7F7;
+}
+
+.header {
+  background-color: #3B3737;
+  height: 3em;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.link-container {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  margin-top: .75em;
+  float: right;
+  margin-right: 10em;
+}
+
+.link-container a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  margin-right: 2em;
+}
+
+.logo-container {
+  width: 100%;
+  top: 3em;
+  height: 7em;
+  position: absolute;
+  text-align: center;
+  background-color: #9DD3DF;
+  text-transform: uppercase;
+  margin: auto;
+}
+
+.logo {
+  margin:0 auto;
+  top: 35%;
+  position: relative;
+}
+
+.container {
+  margin-top:10em;
+  padding-top: 2em;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 15em;
+  color: black;
+}
+
+.container a {
+  text-decoration: none;
+}
+
+.container a:visited {
+  color: #7A656A;
+}
+
+.container a:hover {
+  color: #9DD3DF;
+}
+
+
+.form-input {
+  margin: 1em;
+  display: inline;
+  height: 2em;
+  width: 20em;
+}
+
+#edit-profile {
+
+}
+
+.edit-form-container {
+  margin-top: -12em;
+}
+
+.information {
+
+}
+
+.footer {
+
+}
+
+.button {
+  border: none;
+  height: 6em;
+  width: 20em;
+  border-radius: .5em;
+  margin: 1em;
+  background-color: #9DD3DF;
+}
+
+
+
+
+
+/* Colors */
+
+.red {
+  color: #991818;
+}
+

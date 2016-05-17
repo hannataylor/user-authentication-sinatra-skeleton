@@ -1,0 +1,21 @@
+<div class="container">
+<% if current_user == @user %>
+<h1>Welcome <%=@user.first_name.capitalize%>!</h1>
+
+<h3>Username: <%=@user.username%></h3>
+<h3>Email: <%=@user.email%></h3>
+<h3>First Name: <%=@user.first_name%></h3>
+<h3>Last Name: <%=@user.last_name%></h3>
+<h3>Location: <%=@user.zip.to_region%></h3>
+<h3>User since: <%= long_form_date(@user.created_at)%></h3>
+
+
+<button onclick="location.href='/users/<%=@user.id%>/edit'"class="button">Edit Your Profile</button>
+<% else %>
+
+<%= erb :'403' %>
+
+<% end %>
+
+</div>
+
