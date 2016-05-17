@@ -1,0 +1,10 @@
+<div class="container">
+<% @users.each do |user| %>
+    <p><%= user.username %></p>
+  <ul>
+    <li><%= user.email %></li>
+    <li><%= user.first_name %></li>
+    <li><%= user.last_name %></li>
+    <li><%= user.zip.to_region %></li>
+<% end %>
+</div>

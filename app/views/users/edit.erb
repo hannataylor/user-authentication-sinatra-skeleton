@@ -1,0 +1,40 @@
+<div class="container">
+
+<% if logged_in? %>
+
+<% if @errors %>
+  <span>Something went wrong:</span>
+  <ul>
+    <% @errors.each do |error| %>
+      <li class="red"><%= error %></li>
+    <% end %>
+  </ul>
+<% end %>
+
+<form method="post" action="/users/<%= @user.id %>">
+  <input type="hidden" name="_method" value="put">
+
+  <label for="username-input">Username:</label>
+  <input id="username-input" name="user[username]" type="text" value="<%= @user.try(:username) %>" class="form-input"><br>
+  <label for="email-input">Email:</label>
+  <input id="email-input" name="user[email]" type="text" value="<%= @user.try(:email) %>" class="form-input"><br>
+  <label for="first-name-input">First Name:</label>
+  <input id="first-name-input" name="user[first_name]" type="text" value="<%= @user.try(:first_name) %>" class="form-input"><br>
+  <label for="last-name-input">Last Name:</label>
+  <input id="last-name-input" name="user[last_name]" type="text" value="<%= @user.try(:last_name) %>" class="form-input"><br>
+  <label for="zip-input">Zip Code:</label>
+  <input id="zip-input" name="user[zip]" type="text" value="<%= @user.try(:zip) %>" class="form-input"><br><br>
+
+
+  <input type="submit" value="Update" class="button">
+</form>
+
+
+<% else %>
+
+<%= erb :'403.erb' %>
+
+<% end %>
+
+</div>
+ 
